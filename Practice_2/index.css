@@ -1,0 +1,26 @@
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2021/08/24/15/38/sand-6570980_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blg{
+    border: 2px solid wheat;
+    height: 400px;
+    border-radius: 10px 10px 10px 10px ;
+    background-color: white;
+}
+.blg:hover{
+    border: 2px solid blue;
+}
+.boxname{
+    margin: auto; 
+    width:120px;
+     height: 40px; 
+     background-color:  blue; 
+     margin-top: -18px;
+     border-radius: 0px 0px 10px 10px ;
+     text-align: center;
+     color: white;
+     padding: 8px;
+}
