@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="jsonHandler.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div ng-app="myApp" ng-controller="myController">
+        <table class="table table-striped">
+            <thead>
+              <tr class="table-dark">
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="item in items">
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.fname}}</td>
+                <td>{{item.lname}}</td>   
+                <td><button class="btn btn-warning"><i class="bi bi-pencil-square"></i></button> | <button class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</body>
+</html>

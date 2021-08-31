@@ -1,0 +1,21 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <title>ng-reapeat</title>
+</head>
+<body>
+ 
+    <div ng-init = " myFavLan=[{name:'php',extention:'.php'},{name:'ruby',extention:'.rb'},
+    {name:'c++',extention:'.cpp'},{name:'python',extention:'.py'}]"></div>
+
+    <p ng-repeat="langauge in myFavLan">
+
+        name : {{langauge.name}}<br>
+        extention : {{langauge.extention}}
+    </p>
+</body>
+</html>
