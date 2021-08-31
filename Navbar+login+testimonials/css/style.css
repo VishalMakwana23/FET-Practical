@@ -1,0 +1,163 @@
+*{
+    margin: 0; 
+    padding: 0;
+
+}
+
+.header
+{
+    height: 100vh;
+}
+
+.navbar-style
+{
+    box-shadow: 0 5px 10px #efefef;
+    text-transform: uppercase;
+}
+
+
+.logo
+{
+    height: 48px;
+    padding: 10px;
+}
+
+.icon-bar
+{
+    background: darkorange;
+}
+
+li a
+{
+    color: black;
+}
+
+.big-text
+{
+    font-size: 52px;
+    margin: 20px 0;
+    color: darkorange;
+}
+
+a.btn
+{
+    margin: 30px 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.btn-first
+{
+    background-color: darkorange;
+    color: #fff;
+}
+
+.btn-second
+{
+    background-color: transparent;
+    border: 1px solid darkorange;
+    color: black;
+}
+
+a.btn:hover
+{
+    background-color: darkorange;
+    color: white;
+    border: none;
+    box-shadow: 5px 5px 10px #999;
+    transition: 0.3s;
+}
+
+.banner-info,.banner-image
+{
+    margin: 30px 0px;
+}
+
+
+
+/* 
+testimonials */
+
+.testimonials
+{
+    /* margin: 50% auto; */
+}
+
+.testimonials h1
+{
+    text-align: center;
+    font-weight: bold;
+    color: darkorange;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+   
+}
+
+.testimonials h1::after
+{
+    content: '';
+    background: darkorange;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+
+.testimonials .row
+{
+    margin-top: 30px;
+
+}
+.col-md-4
+{
+    margin: 40px auto;
+}
+
+
+.user
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profile
+{
+    padding: 70px 10px 10px;
+    background-color: #efefef;
+}
+
+.profile img
+{
+    top: -60px;
+    position: absolute;
+    border: 10px solid white;
+    left: 35%;
+}
+
+
+.profile h3{
+    font-size: 20px;
+    margin-top: 15px0;
+    color: darkorange;
+}
+
+.spn-position
+{
+    font-size: 12px;
+    color: #333;
+
+}
+
+.blockquote
+{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.profile:hover
+{
+    box-shadow: 0 0 15px 5px #8a8686;
+}
