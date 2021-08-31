@@ -1,0 +1,21 @@
+[
+    {
+        "id":"1",
+        "fname":"vishal",
+        "lname":"makwana",
+        "status":"ok"
+    },
+    {
+        "id":"2",
+        "fname":"jay",
+        "lname":"makwana",
+        "status":"ok"
+    },
+
+    {
+        "id":"3",
+        "fname":"raj",
+        "lname":"makwana",
+        "status":"ok"
+    }
+]
