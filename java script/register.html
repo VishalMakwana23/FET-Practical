@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regidter!!</title>
+</head>
+
+<script type="text/javascript">
+
+function btnsubmit()
+{
+    var uname = document.getElementById("uname");
+    var psw = document.getElementById("psw");
+    var mobile = document.getElementById("mobile");
+
+    var regx = /^[7-9]\d{9}$/;
+
+    if(uname.value.trim() == "")
+    {
+        uname.style.border = "solid 2px red"
+        var unameemptylbl = document.getElementById("unameemptylbl").style.visibility = "visible";
+        return false;
+
+    }
+    
+    else if(uname.value.trim().length<5)
+    {
+        unameemptylbl = document.getElementById("unameemptylbl").innerHTML = "Name is to Short";
+        return false;
+    }
+
+    // else if(mobile.value.trim() == "")
+    // {
+    //     mobile.style.border = "solid 2px red";
+    //     var mobileemptylbl = document.getElementById("mobileemptylbl").style.visibility = "visible";
+    //     return false;
+    // }
+
+    else if(regx.test(mobile))
+    {
+        var mobileemptylbl = document.getElementById("mobileemptylbl").style.visibility = "visible";
+      // mobileemptylbl = document.getElementById("mobileemptylbl").innerHTML = "Please enter  10 Number og Digit";
+        return false;
+    }
+
+    else if(psw.value.trim() =="")
+    {
+        psw.style.border = "solid 2px red"
+        var pswemptylbl = document.getElementById("pswemptylbl").style.visibility = "visible";
+        return false;
+    }
+    else{
+
+        alert("Login Successfull");
+        return true;
+    }
+}
+
+</script>
+
+<body>
+    <form action="home.html" onsubmit="return btnsubmit()">
+        
+        <input type="text" id="uname" placeholder="Enter Username">
+        <label id="unameemptylbl" style="color: red; visibility: hidden;">Please Enter Username</label>
+        <br><br>
+        <input type="text" id="mobile" placeholder="Enter Mobile Number">
+        <label id="mobileemptylbl" style="color: red; visibility: hidden;">Please Enter Mobile</label>
+        <br><br>
+        <input type="text" id="psw" placeholder="Enter password">
+        <label id="pswemptylbl" style="color: red; visibility: hidden;" >Please Enter Password</label><br>
+
+        <button>Submit</button>
+
+    </form>
+</body>
+</html>

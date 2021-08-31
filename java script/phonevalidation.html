@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Validation</title>
+</head>
+
+<script type="text/javascript">
+
+    function btnsubmit()
+    {
+        var mobile = document.getElementById("mobile");
+    
+        var regx = /^[7-9]\d{3}$/;
+
+        if(regx.test(mobile))
+        {
+            alert("done");
+            return true;
+        }
+        else{
+            alert("not done");
+            return false;
+;
+        }
+    
+    }
+    
+    </script>
+<body>
+   <form onsubmit="return btnsubmit()" action="hello.html">
+
+
+        <input type="text" id="mobile" placeholder="Enter Mobile Number">
+        <label id="mobileemptylbl" style="color: red; visibility: hidden;">enter numeric</label>
+        <br><br>
+        
+
+        <button>Submit</button>
+
+
+</form>
+   
+</body>
+</html>

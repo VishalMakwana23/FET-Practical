@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input from user</title>
+
+
+    <script type="text/javascript">
+
+        function btnClick()
+        {
+            var str = document.getElementById("name").value;
+            var str2 = document.getElementById("psw").value;
+            
+            if(str == str2)
+            {
+                alert("both are same");
+            }
+            else{
+                alert("entred name is : "+str);
+            }
+           
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <input type="text" id="name" placeholder="enter your name ">
+    <input type="text" id="psw" placeholder="enter password ">
+    <button id="btn" onclick="btnClick()">click</button>
+</body>
+</html>

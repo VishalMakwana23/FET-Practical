@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+
+    <script type="text/javascript">
+
+        function btnClick()
+        {
+            
+            var male = document.getElementById("male");
+            var female = document.getElementById("female");
+        
+            if(male.checked == true)
+                alert("gender : " +male.value);
+            else if(female.checked == true)
+                alert("gender : " +female.value);
+            else
+                alert("please select gender")
+        }
+
+
+    </script>
+</head>
+<body>
+    <input id="male" name ="gender" type="radio"  value="male"> male</input></br>
+    <input id="female" name = "gender" type="radio"  value="female"> female</input></br>
+
+    <button id="btn" onclick="btnClick()">click</button>
+</body>
+</html>
